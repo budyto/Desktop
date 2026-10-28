@@ -1,4 +1,4 @@
-:root{--ink:#121212;--muted:#7a746c;--line:#e7e1d8;--paper:#faf7f2;--card:#fff;--gold:#b08a46;--gold-d:#94723a;--green:#1f7a43;--amber:#9b6a00}
+:root{--ink:#121212;--muted:#7a746c;--line:#e2e0dc;--paper:#f6f5f3;--card:#fff;--accent:#2f3130;--accent-d:#111;--green:#1f7a43;--amber:#9b6a00}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink)}
@@ -9,24 +9,24 @@ svg{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-l
 .top{position:sticky;top:0;z-index:20;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .head{max-width:1200px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brandBox{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
-.logo{width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid var(--line);background:#111}
+.logo{width:52px;height:52px;border-radius:50%;object-fit:cover}
 .brandName{font-family:Georgia,"Times New Roman",serif;font-size:20px;letter-spacing:.5px}
 .brandSub{font-size:11px;color:var(--muted)}
 .cartTop{position:relative;border:0;background:transparent;cursor:pointer;padding:8px}
 .cartTop svg{width:26px;height:26px}
-.count{position:absolute;top:2px;right:0;min-width:19px;height:19px;padding:0 5px;border-radius:999px;background:var(--gold);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
+.count{position:absolute;top:2px;right:0;min-width:19px;height:19px;padding:0 5px;border-radius:999px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
 .trustLine{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:7px 16px;font-size:11px;color:var(--muted);border-top:1px solid #efe9e0;background:#fff}
 
 .demoBanner{background:#fff4dc;color:#7a5500;font-size:12px;text-align:center;padding:8px 16px;border-bottom:1px solid #f0dfb5}
 
 .hero{max-width:1200px;margin:auto;padding:24px 16px 8px}
 .hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:32px;margin:0 0 14px}
-.hero h1 em{color:var(--gold)}
+.hero h1 em{color:#6b6d6c}
 .tools{display:flex;gap:8px}
 .search{flex:1;position:relative}
 .search svg{position:absolute;left:13px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--muted)}
 .search input{width:100%;padding:12px 14px 12px 40px;border:1px solid var(--line);border-radius:12px;background:#fff;outline:none}
-.search input:focus,#sort:focus{border-color:var(--gold)}
+.search input:focus,#sort:focus{border-color:var(--accent)}
 #sort{border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 10px;outline:none}
 .filters{display:flex;gap:7px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
 .filters::-webkit-scrollbar{display:none}
@@ -49,7 +49,7 @@ svg{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-l
 .badge.ok{background:#e6f4ea;color:var(--green)}
 .badge.low{background:#fff1cc;color:var(--amber)}
 .badge.out{background:#eee;color:#777}
-.badge.decant{background:#f4ecdf;color:var(--gold-d)}
+.badge.decant{background:#ecebe8;color:#3b3d3c}
 .price{margin-top:auto;font-size:18px;font-weight:800;padding-top:4px}
 .add{border:0;border-radius:10px;background:var(--ink);color:#fff;font-weight:700;padding:10px;cursor:pointer;font-size:12px;letter-spacing:.5px}
 .add:hover{background:#333}
@@ -57,7 +57,7 @@ svg{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-l
 .msg{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
 
 footer{border-top:1px solid var(--line);padding:26px 16px 34px;text-align:center}
-.footLogo{width:64px;height:64px;border-radius:50%;object-fit:cover;background:#111}
+.footLogo{width:84px;height:84px;border-radius:50%;object-fit:cover}
 .socials{display:flex;justify-content:center;gap:10px;margin:12px 0}
 .socials a{text-decoration:none;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:#fff}
 .legal{font-size:11px;color:#9a948b}
@@ -79,8 +79,8 @@ footer{border-top:1px solid var(--line);padding:26px 16px 34px;text-align:center
 .qty button{width:30px;height:30px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
 .cartFoot{padding:16px;border-top:1px solid var(--line)}
 .totals{display:flex;justify-content:space-between;font-size:16px;margin-bottom:12px}
-.primary{width:100%;border:0;border-radius:12px;background:var(--gold);color:#fff;font-weight:800;padding:14px;cursor:pointer;letter-spacing:.5px}
-.primary:hover{background:var(--gold-d)}
+.primary{width:100%;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;padding:14px;cursor:pointer;letter-spacing:.5px}
+.primary:hover{background:var(--accent-d)}
 .primary:disabled{background:#ddd;color:#888;cursor:not-allowed}
 .note,.muted{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.4}
 

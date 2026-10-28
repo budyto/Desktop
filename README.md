@@ -1,4 +1,4 @@
-# BYN Fragancias: tienda conectada a Google Sheets
+# ByN Fragancias: tienda conectada a Google Sheets
 
 Tienda web de perfumes. El stock, los precios y las fotos se cargan en un **Google Sheet**: cuando el cliente cambia una celda, la web se actualiza sola (la página vuelve a leer la hoja cada 60 segundos).
 

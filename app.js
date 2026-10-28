@@ -133,8 +133,8 @@
     for (const c of p.sku) h = (h * 31 + c.charCodeAt(0)) % 360;
     return '<svg class="bottle" viewBox="0 0 100 140" aria-hidden="true">' +
       '<rect x="40" y="8" width="20" height="16" rx="3" fill="#2a2a2a"/>' +
-      '<rect x="44" y="22" width="12" height="10" fill="#b08a46"/>' +
-      '<rect x="18" y="32" width="64" height="98" rx="14" fill="hsl(' + h + ',35%,78%)" opacity=".9"/>' +
+      '<rect x="44" y="22" width="12" height="10" fill="#6b6d6c"/>' +
+      '<rect x="18" y="32" width="64" height="98" rx="14" fill="hsl(' + h + ',10%,' + (72 + h % 14) + '%)"/>' +
       '<rect x="28" y="62" width="44" height="34" rx="4" fill="#fff" opacity=".85"/>' +
       '<text x="50" y="83" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#333">' + escapeHtml(p.brand.slice(0, 14)) + '</text></svg>';
   }
