@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>BYN Fragancias</title>
+  <meta name="description" content="Perfumes originales y decants. Stock actualizado al momento.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="head">
+      <a class="brandBox" href="#">
+        <img class="logo" id="logo" src="assets/logo.png" alt="BYN Fragancias" onerror="this.onerror=null;this.src='assets/logo.svg'">
+        <div class="brandText"><div class="brandName" id="brandName">BYN Fragancias</div><div class="brandSub" id="brandSub"></div></div>
+      </a>
+      <button class="cartTop" id="cartBtn" aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="count" id="cartCount">0</span>
+      </button>
+    </div>
+    <div class="trustLine"><span>100% originales</span><span>Stock actualizado al momento</span><span>Envíos a todo el país</span></div>
+  </header>
+
+  <div class="demoBanner" id="demoBanner" hidden>Modo demo: productos de ejemplo. Al conectar el Google Sheet se muestran los reales.</div>
+
+  <section class="hero">
+    <h1>Encontrá tu <em>fragancia</em></h1>
+    <div class="tools">
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" placeholder="Buscar perfume o marca..."></label>
+      <select id="sort" aria-label="Ordenar">
+        <option value="marca">Marca A-Z</option>
+        <option value="precioAsc">Menor precio</option>
+        <option value="precioDesc">Mayor precio</option>
+      </select>
+    </div>
+    <div class="filters" id="genderFilters"></div>
+    <div class="filters" id="brandFilters"></div>
+    <div class="meta"><span id="resultCount"></span><span id="updated"></span></div>
+  </section>
+
+  <main class="wrap"><div class="grid" id="grid"><div class="msg">Cargando catálogo...</div></div></main>
+
+  <footer>
+    <img class="footLogo" src="assets/logo.png" alt="" onerror="this.onerror=null;this.src='assets/logo.svg'">
+    <div class="socials">
+      <a id="igLink" target="_blank" rel="noopener">Instagram</a>
+      <a id="waLink" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="legal">Precios y disponibilidad sujetos a cambios sin previo aviso.</div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Carrito">
+    <div class="drawerHead"><h2>Tu pedido</h2><button class="x" id="closeCart" aria-label="Cerrar">×</button></div>
+    <div class="cartItems" id="cartItems"></div>
+    <div class="cartFoot">
+      <div class="totals"><span>Total</span><b id="total">$0</b></div>
+      <button class="primary" id="checkout">FINALIZAR PEDIDO</button>
+      <div class="note">Agregar al carrito no reserva stock. Confirmamos disponibilidad por WhatsApp.</div>
+    </div>
+  </aside>
+
+  <div class="modal" id="choiceModal">
+    <div class="panel">
+      <div class="panelHead"><h3 id="choiceName"></h3><button class="x" data-close="choiceModal" aria-label="Cerrar">×</button></div>
+      <div class="choiceRow"><div><b>Frasco sellado</b><div class="muted" id="choiceFullPrice"></div></div><div class="qty"><button data-choice="full" data-step="-1">−</button><b id="choiceFull">0</b><button data-choice="full" data-step="1">+</button></div></div>
+      <div class="choiceRow"><div><b>Decant 5 ml</b><div class="muted" id="choiceDecantPrice"></div></div><div class="qty"><button data-choice="decant" data-step="-1">−</button><b id="choiceDecant">0</b><button data-choice="decant" data-step="1">+</button></div></div>
+      <button class="primary" id="applyChoice">AGREGAR AL CARRITO</button>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal">
+    <div class="panel">
+      <form id="orderForm">
+        <div class="panelHead"><h3>Finalizar pedido</h3><button type="button" class="x" data-close="checkoutModal" aria-label="Cerrar">×</button></div>
+        <p class="muted">Completá tus datos. No se cobra nada desde la web: coordinamos el pago por WhatsApp.</p>
+        <div class="fields">
+          <label>Nombre y apellido<input name="nombre" required autocomplete="name"></label>
+          <label>WhatsApp<input name="telefono" required inputmode="tel" autocomplete="tel"></label>
+          <label>Entrega<select name="entrega" id="entrega"><option>Retiro</option><option>Envío</option></select></label>
+          <div id="shipFields" hidden>
+            <label>Dirección<input name="direccion" autocomplete="street-address"></label>
+            <label>Localidad y provincia<input name="localidad"></label>
+            <label>Código postal<input name="cp" inputmode="numeric"></label>
+          </div>
+          <label>Observaciones<textarea name="observaciones" rows="2"></textarea></label>
+        </div>
+        <div class="status" id="formStatus"></div>
+        <button class="primary" type="submit" id="sendOrder">ENVIAR PEDIDO POR WHATSAPP</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="config.js"></script>
+  <script src="demo-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

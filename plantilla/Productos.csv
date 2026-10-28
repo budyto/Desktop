@@ -1,0 +1,13 @@
+SKU,Marca,Nombre,Genero,Precio,Decant,Stock,Foto,Descripcion,Visible
+BYN-001,Dior,Sauvage EDT 100 ml,Hombre,185000,9500,8,,"Fresco, especiado, ambroxan.",SI
+BYN-002,Chanel,Bleu de Chanel EDP 100 ml,Hombre,210000,11000,2,,Amaderado aromático.,SI
+BYN-003,Carolina Herrera,Good Girl EDP 80 ml,Mujer,165000,8500,5,,"Tuberosa, cacao y haba tonka.",SI
+BYN-004,Paco Rabanne,1 Million EDT 100 ml,Hombre,140000,0,0,,"Dulce especiado, cuero.",SI
+BYN-005,Lancôme,La Vie Est Belle EDP 100 ml,Mujer,175000,9000,6,,"Iris, praliné y vainilla.",SI
+BYN-006,Lattafa,Khamrah EDP 100 ml,Unisex,55000,4000,14,,"Dátiles, canela y praliné.",SI
+BYN-007,Armaf,Club de Nuit Intense Man 105 ml,Hombre,62000,4500,3,,"Ahumado, cítrico, abedul.",SI
+BYN-008,Yves Saint Laurent,Libre EDP 90 ml,Mujer,190000,10000,4,,Lavanda y flor de azahar.,SI
+BYN-009,Jean Paul Gaultier,Le Male Elixir 125 ml,Hombre,198000,10500,1,,"Miel, tabaco y lavanda.",SI
+BYN-010,Lattafa,Yara EDP 100 ml,Mujer,48000,3500,20,,"Orquídea, vainilla y frutas tropicales.",SI
+BYN-011,Maison Francis Kurkdjian,Baccarat Rouge 540 EDP 70 ml,Unisex,520000,22000,2,,"Azafrán, ámbar gris, cedro.",SI
+BYN-012,Versace,Eros EDT 100 ml,Hombre,135000,7500,7,,"Menta, manzana verde y vainilla.",SI

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Logo provisorio. Reemplazar por assets/logo.png (foto de perfil de Instagram). -->
+  <circle cx="100" cy="100" r="96" fill="#111"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#c9a45c" stroke-width="2"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="52" letter-spacing="4" fill="#c9a45c">BYN</text>
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" letter-spacing="5" fill="#e9dcc0">FRAGANCIAS</text>
+</svg>
